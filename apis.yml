@@ -1,19 +1,17 @@
 aid: kodiak
 name: Kodiak AI
-description: 'Kodiak AI, Inc. (formerly Kodiak Robotics) is a Mountain View, California
-  company building the Kodiak Driver, an AI-powered ground autonomy system for driverless
-  trucking and defense vehicles. Founded in April 2018 by Don Burnette, Kodiak develops
-  a purpose-built autonomous driving stack — sensor pods, 4D radar, sparse maps, and
-  fallback systems — that integrates into third-party driving platforms rather than
-  shipping a vehicle of its own. The company runs commercial driverless freight lanes
-  in Texas, Oklahoma, Ohio and Indiana with partners including Atlas Energy Solutions,
-  Maersk, Martin Brower, Roehl Transport, JB Hunt and Werner, and it adapts the same
-  driver to defense and industrial missions with General Dynamics Land Systems, Textron
-  Systems and the US Army. Kodiak raised a $125M Series B in 2021 with Lightspeed Venture
-  Partners, Battery Ventures, CRV, SIP Global Partners and others participating, and
-  became a public company through a business combination with Ares Acquisition Corporation
-  II. Kodiak publishes a corporate web presence, a news/RSS feed and an llms.txt for
-  agents, but does not currently operate a public developer program, API, or SDK surface.'
+description: Kodiak AI, Inc. (formerly Kodiak Robotics) is a Mountain View, California company building
+  the Kodiak Driver, an AI-powered ground autonomy system for driverless trucking and defense vehicles.
+  Founded in April 2018 by Don Burnette, Kodiak develops a purpose-built autonomous driving stack — sensor
+  pods, 4D radar, sparse maps, and fallback systems — that integrates into third-party driving platforms
+  rather than shipping a vehicle of its own. The company runs commercial driverless freight lanes in Texas,
+  Oklahoma, Ohio and Indiana with partners including Atlas Energy Solutions, Maersk, Martin Brower, Roehl
+  Transport, JB Hunt and Werner, and it adapts the same driver to defense and industrial missions with
+  General Dynamics Land Systems, Textron Systems and the US Army. Kodiak raised a $125M Series B in 2021
+  with Lightspeed Venture Partners, Battery Ventures, CRV, SIP Global Partners and others participating,
+  and became a public company through a business combination with Ares Acquisition Corporation II. Kodiak
+  publishes a corporate web presence, a news/RSS feed and an llms.txt for agents, but does not currently
+  operate a public developer program, API, or SDK surface.
 accessModel:
   pricing: unknown
   onboarding: unknown
@@ -35,7 +33,7 @@ x-tier: profiled
 x-tier-reason: no-public-api-surface
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-19'
+modified: '2026-08-08'
 tags:
 - Company
 - Autonomous Vehicles
@@ -82,8 +80,20 @@ common:
   url: well-known/kodiak-well-known.yml
 - type: DomainSecurity
   url: security/kodiak-domain-security.yml
+- type: InvestorRelations
+  url: https://kodiak.ai/investors
+- type: Media
+  url: https://kodiak.ai/media
+- type: LinkedIn
+  url: https://www.linkedin.com/company/kodiakai
+- type: Twitter
+  url: https://x.com/KodiakRobotics
+- type: YouTube
+  url: https://www.youtube.com/channel/UCRG0KWUWZF3Kq-nPZ8Td56A
 x-enrichment:
   date: '2026-07-19'
   status: backfilled
   pass: local-v1
   note: backfilled from .gitignore signal + verified work evidence
+x-merged-from:
+- kodiak-ai
