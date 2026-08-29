@@ -12,6 +12,17 @@ description: Kodiak AI, Inc. (formerly Kodiak Robotics) is a Mountain View, Cali
   and became a public company through a business combination with Ares Acquisition Corporation II. Kodiak
   publishes a corporate web presence, a news/RSS feed and an llms.txt for agents, but does not currently
   operate a public developer program, API, or SDK surface.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
