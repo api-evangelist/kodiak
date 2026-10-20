@@ -44,7 +44,7 @@ x-tier: profiled
 x-tier-reason: no-public-api-surface
 specificationVersion: '0.23'
 created: '2026-07-17'
-modified: '2026-08-08'
+modified: '2026-10-20'
 tags:
 - Company
 - Autonomous Vehicles
@@ -56,13 +56,16 @@ tags:
 - Transportation
 - Defense
 - Physical AI
-apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: Hosts
+  url: hosts/kodiak-hosts.yml
+- type: Vendors
+  url: vendors/kodiak-vendors.yml
 - type: Website
   url: https://kodiak.ai/
 - type: About
@@ -74,7 +77,7 @@ common:
 - type: Contact
   url: https://kodiak.ai/contact
 - type: Support
-  url: https://kodiak.ai/contact
+  url: https://support.kodiak.ai/support/home
 - type: TermsOfService
   url: https://kodiak.ai/terms-of-use
 - type: PrivacyPolicy
@@ -101,10 +104,24 @@ common:
   url: https://x.com/KodiakRobotics
 - type: YouTube
   url: https://www.youtube.com/channel/UCRG0KWUWZF3Kq-nPZ8Td56A
+apis: []
 x-enrichment:
-  date: '2026-07-19'
-  status: backfilled
-  pass: local-v1
-  note: backfilled from .gitignore signal + verified work evidence
+  date: '2026-10-20'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v5
 x-merged-from:
 - kodiak-ai
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: Kodiak AI sells an autonomous trucking driver to fleet partners; kodiak.ai publishes no API
+    docs or spec, api.kodiak.ai does not resolve, and support.kodiak.ai is a customer help desk.
+  evidence:
+  - url: https://kodiak.ai/openapi.json
+    status: 404
+  - url: https://kodiak.ai/llms.txt
+    status: 200
+  - url: https://support.kodiak.ai/mcp
+    status: 401
+  checked: '2026-10-20'

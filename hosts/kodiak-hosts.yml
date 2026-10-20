@@ -1,0 +1,113 @@
+generated: '2026-10-20'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 8
+  own: 4
+  other_domain: 0
+  platform: 4
+  roles:
+  - api
+  - other
+  - source
+  - support
+  - website
+hosts:
+- host: api.kodiak.ai
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: kodiak.ai
+  role: api
+  relation: own
+- host: github.com
+  found_by:
+  - pointer
+  types:
+  - GitHubOrganization
+  serves: []
+  registrable_domain: github.com
+  role: source
+  relation: platform
+- host: investors.kodiak.ai
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types:
+  - Investors
+  serves: []
+  registrable_domain: kodiak.ai
+  role: other
+  relation: own
+- host: kodiak.ai
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - Website
+  - About
+  - Blog
+  - BlogRSS
+  - Contact
+  - TermsOfService
+  - PrivacyPolicy
+  - Careers
+  - InvestorRelations
+  - Media
+  serves:
+  - hosting
+  vendor: vercel
+  registrable_domain: kodiak.ai
+  role: website
+  relation: own
+- host: support.kodiak.ai
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - Support
+  serves:
+  - support
+  vendor: freshdesk
+  registrable_domain: kodiak.ai
+  role: support
+  relation: own
+- host: www.linkedin.com
+  found_by:
+  - pointer
+  types:
+  - LinkedIn
+  serves: []
+  registrable_domain: linkedin.com
+  role: other
+  relation: platform
+- host: www.youtube.com
+  found_by:
+  - pointer
+  types:
+  - YouTube
+  serves: []
+  registrable_domain: youtube.com
+  role: other
+  relation: platform
+- host: x.com
+  found_by:
+  - pointer
+  types:
+  - Twitter
+  serves: []
+  registrable_domain: x.com
+  role: other
+  relation: platform
